@@ -6,7 +6,7 @@ var obj = { "images": [{"Name": "Rocks", "url" : "img/index1.jpeg","info":"Rocks
 function imageExists()
 {
 var url=document.getElementById('url').value;
-var pattern = /([^\s]+(\/(*i))+(\.(?i)(jpg|png|gif|bmp|jpeg))$)/;
+var pattern = /(http(s?):)?([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg)/g;
 if (url.match(pattern))
             return true;
             return false;
