@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/GalleryAdminStyle.css">
+
+
+</head>
+<body>
+<ul>
+<li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="GalleryAdmin.html">GalleryAdmin</a></li>
+</ul>
+
+<center><h1>Gallery Admin</h1></center>
+
+<div class="container">
+  
+    <label for="imgURL">Image URL</label>
+    <input type="hidden" id="index" name="index">
+    <input type="text" id="url" name="Url" placeholder="Your Image URL">
+ <label for="imgURL">Image Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Image Name">
+ <label for="imgURL">Image Info</label>
+    <input type="text" id="info" name="info" placeholder="Your Image info">
+ <label for="imgURL">Image Uploaded Date</label>
+    <input type="text" id="date" name="date" placeholder="yyyy-mm-dd">
+   
+ <button class="button" onclick="add()">Add</button> 
+<button class="button" onclick="del()">delete</button> 
+<button class="button" onclick="edit()">edit</button> 
+</div> 
+<div>
+<table id="imageTable"></table>
+</div>
+
+</body>
+
+
+ <script src="js/GalleryAdmin.js" type="text/javascript" ></script>
+</html>
